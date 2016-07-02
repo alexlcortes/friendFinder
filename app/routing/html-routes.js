@@ -1,12 +1,15 @@
+var path = ('path');
 // Routes
 // =============================================================
 
+module.exports = function(app) {
+
+ 
 app.get('/survey', function(req, res){
-	//res.send("You have navigated to the survey page.")
 	res.sendFile(path.join(__dirname + '/survey.html'));
 })
 
-app.get('/', function(req, res){
+app.get('/friends', function(req, res){
 	//res.send("You have navigated to the home page.")
-	res.sendFile(path.join(__dirname + '/home.html'));
+	res.sendFile(path.join(__dirname + '/friends.html'));
 })
