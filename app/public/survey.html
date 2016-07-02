@@ -155,15 +155,13 @@
 	</div>
 </div>
 
-<!-- <script type="text/javascript" src="/js/compatible-logic.js"></script> -->
+
 <script type="text/javascript">
 
-	// create function for when submit button is pressed.
 	$("#submit").on("click", function() {														
 		console.log('I just clicked the submit button');
 
         
-	// saves all information from page to object called friendData
 	var friendData = {
 		name: $("#friend_name").val(),
 		photo: $("#friend_photo").val(),
@@ -172,7 +170,6 @@
 	var currentURL = window.location.origin;
 
 
-	// function sends friendData to url and manipulates data, return on .done as "data"
 	$.post( currentURL + "/api/friends", friendData).done(function(data){
 		console.log(data);
 
@@ -185,6 +182,7 @@
 
         return false;
     })
+    
 </script>
 </body>
 </html>
