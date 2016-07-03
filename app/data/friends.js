@@ -1,6 +1,6 @@
 var friends = [{
 	name: "LL Cool J.",
-	photo: "http://assets.rollingstone.com/assets/images/artists/ll-cool-j.jpg",q
+	photo: "http://assets.rollingstone.com/assets/images/artists/ll-cool-j.jpg",
 	scores: [
 		'1',
 		'3',
@@ -16,7 +16,7 @@ var friends = [{
 },
 {
 	name: "Barrack Obama",
-	photo: "https://lh6.googleusercontent.com/-2lJYGtfXKwQ/AAAAAAAAAAI/AAAAAAAB2HQ/QSmIw0nQN_c/photo.jpg"
+	photo: "https://lh6.googleusercontent.com/-2lJYGtfXKwQ/AAAAAAAAAAI/AAAAAAAB2HQ/QSmIw0nQN_c/photo.jpg",
 	scores: [
 		'1',
 		'2',
@@ -47,4 +47,4 @@ var friends = [{
 	]
 },]
 
-[p875module.exports = friends;
+module.exports = friends;
