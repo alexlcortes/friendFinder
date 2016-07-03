@@ -36,14 +36,14 @@ app.post('/api/friends', function(req, res) {
 	res.json(friends[friendIndex]);
 }
 
-function compare(oldNames, newNames){
-	var difference = 0;
+	function compare(oldNames, newNames){
+		var difference = 0;
 
-	for (var = i; i < oldNames.length; i++) {
+		for (var = i; i < oldNames.length; i++) {
 
-		difference += Math.abs(oldName[i] - newNames[i])
+			difference += Math.abs(oldName[i] - newNames[i])
 
+		}
+		return difference;
 	}
-	return difference;
-}
 }
