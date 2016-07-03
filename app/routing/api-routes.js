@@ -20,7 +20,7 @@ app.post('/api/friends', function(req, res) {
 	var friendIndex = 0;
 
 	// loop through friends
-	for (var = i; i < friends.length; i++) {
+	for (var i = 0; i < friends.length; i++) {
 
 		var diff = compare(friends[i].scores, body.scores)
 
@@ -39,7 +39,7 @@ app.post('/api/friends', function(req, res) {
 	function compare(oldNames, newNames){
 		var difference = 0;
 
-		for (var = i; i < oldNames.length; i++) {
+		for (var i = 0 ; i < oldNames.length; i++) {
 
 			difference += Math.abs(oldName[i] - newNames[i])
 
