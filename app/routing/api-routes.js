@@ -1,4 +1,4 @@
-var friends = require('../data/friend-data.js');
+var friends = require('../data/friends.js');
 var path = require('path');
 
 
@@ -14,7 +14,7 @@ app.get('/api/friends', function(req, res){
 
 app.post('/api/friends', function(req, res) {
 
-	var body =req.body;
+	var body = req.body;
 
 	var totalScore = 100;
 	var friendIndex = 0;
@@ -34,7 +34,7 @@ app.post('/api/friends', function(req, res) {
 
 	}
 	res.json(friends[friendIndex]);
-}
+});
 
 	function compare(oldNames, newNames){
 		var difference = 0;
